@@ -11,7 +11,7 @@ import java.io.IOException;
 
 /**
  * A {@link JsonValue} object. A JSON object has a number of members, each one identified by a key and having a value (which may be {@link Null} or {@link
- * Nullable, but not {@code null}).
+ * Nullable}, but not {@code null}).
  * <p>
  * Members are passed as {@link Pair}s of keys and values with keys being {@link String}s and values being {@link JsonValue}.
  *
