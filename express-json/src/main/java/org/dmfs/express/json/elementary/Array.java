@@ -22,6 +22,9 @@ public final class Array implements JsonValue
 
     /**
      * Creates a {@link JsonValue} array of {@link Jsonable}s.
+     *
+     * @param elements
+     *         the elements of the Array
      */
     public Array(Jsonable... elements)
     {
@@ -31,6 +34,9 @@ public final class Array implements JsonValue
 
     /**
      * Creates a {@link JsonValue} array of {@link Boolean}s.
+     *
+     * @param elements
+     *         the elements of the Array
      */
     public Array(java.lang.Boolean... elements)
     {
@@ -40,6 +46,9 @@ public final class Array implements JsonValue
 
     /**
      * Creates a {@link JsonValue} array of {@link Number}s.
+     *
+     * @param elements
+     *         the elements of the Array
      */
     public Array(java.lang.Number... elements)
     {
@@ -49,6 +58,9 @@ public final class Array implements JsonValue
 
     /**
      * Creates a {@link JsonValue} array of {@link CharSequence}s.
+     *
+     * @param elements
+     *         the elements of the Array
      */
     public Array(CharSequence... elements)
     {
@@ -58,6 +70,9 @@ public final class Array implements JsonValue
 
     /**
      * Creates a {@link JsonValue} array of arbitrary {@link JsonValue} values.
+     *
+     * @param elements
+     *         the elements of the Array
      */
     public Array(JsonValue... elements)
     {
