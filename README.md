@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dmfs/express.svg?branch=master)](https://travis-ci.org/dmfs/express)
+
 # express
 
 **express** verb [transitive] _/ɪkˈspres/_ (express oneself) Say or otherwise communicate what one thinks or means. 
