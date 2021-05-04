@@ -3,8 +3,8 @@ package org.dmfs.express.json.elementary;
 import org.dmfs.express.json.JsonSink;
 import org.dmfs.express.json.JsonValue;
 import org.dmfs.express.json.decorators.Nullable;
-import org.dmfs.iterables.elementary.Seq;
-import org.dmfs.jems.pair.Pair;
+import org.dmfs.jems2.Pair;
+import org.dmfs.jems2.iterable.Seq;
 
 import java.io.IOException;
 

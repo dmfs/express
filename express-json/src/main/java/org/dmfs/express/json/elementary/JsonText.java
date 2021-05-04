@@ -2,7 +2,7 @@ package org.dmfs.express.json.elementary;
 
 import org.dmfs.express.json.JsonValue;
 import org.dmfs.express.json.sinks.StringBuilderSink;
-import org.dmfs.jems.single.Single;
+import org.dmfs.jems2.Single;
 
 import java.io.IOException;
 import java.lang.String;

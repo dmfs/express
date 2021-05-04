@@ -19,7 +19,7 @@ public class ObjectTest
         assertThat(new Object(new Member("a", 1), new Member("x", "y")), serializesTo("{\"a\":1,\"x\":\"y\"}"));
         assertThat(new Object(new Member("a", new Object()), new Member("x", "y")), serializesTo("{\"a\":{},\"x\":\"y\"}"));
         assertThat(new Object(new Member("a", new Object(new Member("b", "q"))), new Member("x", new Array(1, 2, 3))),
-                serializesTo("{\"a\":{\"b\":\"q\"},\"x\":[1,2,3]}"));
+            serializesTo("{\"a\":{\"b\":\"q\"},\"x\":[1,2,3]}"));
     }
 
 }
