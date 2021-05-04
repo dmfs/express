@@ -4,7 +4,7 @@ import org.dmfs.express.json.Jsonable;
 import org.junit.Test;
 
 import static org.dmfs.express.json.hamcrest.JsonSerializationMatcher.serializesTo;
-import static org.dmfs.jems.hamcrest.matchers.PairMatcher.pair;
+import static org.dmfs.jems2.hamcrest.matchers.pair.PairMatcher.pair;
 import static org.junit.Assert.assertThat;
 
 
@@ -25,5 +25,4 @@ public class MemberTest
         assertThat(new Member("abc", new String("123")), pair(serializesTo("\"abc\""), serializesTo("\"123\"")));
         assertThat(new Member(new String("abc"), new String("123")), pair(serializesTo("\"abc\""), serializesTo("\"123\"")));
     }
-
 }

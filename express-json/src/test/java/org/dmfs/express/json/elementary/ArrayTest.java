@@ -2,8 +2,8 @@ package org.dmfs.express.json.elementary;
 
 import org.dmfs.express.json.JsonValue;
 import org.dmfs.express.json.Jsonable;
-import org.dmfs.iterables.EmptyIterable;
-import org.dmfs.iterables.elementary.Seq;
+import org.dmfs.jems2.iterable.EmptyIterable;
+import org.dmfs.jems2.iterable.Seq;
 import org.junit.Test;
 
 import static org.dmfs.express.json.hamcrest.JsonSerializationMatcher.serializesTo;

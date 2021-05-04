@@ -2,7 +2,7 @@ package org.dmfs.express.json.elementary;
 
 import org.dmfs.express.json.JsonSink;
 import org.dmfs.express.json.JsonValue;
-import org.dmfs.jems.charsequence.elementary.Hex;
+import org.dmfs.jems2.charsequence.Hex;
 
 import java.io.IOException;
 

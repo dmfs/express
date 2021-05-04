@@ -10,8 +10,8 @@ configurations {
 apply from: '../publish.gradle'
 
 dependencies {
-    compile 'org.dmfs:jems:1.16'
-    compile 'org.dmfs:jems-testing:1.16'
+    implementation 'org.dmfs:jems2:2.2.0'
 
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.dmfs:jems2-testing:2.2.0'
+    testImplementation 'junit:junit:4.12'
 }

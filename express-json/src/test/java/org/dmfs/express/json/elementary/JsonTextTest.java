@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static org.dmfs.jems.hamcrest.matchers.SingleMatcher.hasValue;
+import static org.dmfs.jems2.hamcrest.matchers.single.SingleMatcher.hasValue;
 import static org.junit.Assert.assertThat;
 
 

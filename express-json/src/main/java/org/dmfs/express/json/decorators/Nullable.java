@@ -6,11 +6,11 @@ import org.dmfs.express.json.elementary.Boolean;
 import org.dmfs.express.json.elementary.Null;
 import org.dmfs.express.json.elementary.Number;
 import org.dmfs.express.json.elementary.String;
-import org.dmfs.jems.optional.decorators.Mapped;
-import org.dmfs.jems.single.Single;
-import org.dmfs.jems.single.combined.Backed;
-import org.dmfs.optional.NullSafe;
-import org.dmfs.optional.Optional;
+import org.dmfs.jems2.Optional;
+import org.dmfs.jems2.Single;
+import org.dmfs.jems2.optional.Mapped;
+import org.dmfs.jems2.optional.NullSafe;
+import org.dmfs.jems2.single.Backed;
 
 import java.io.IOException;
 

@@ -3,7 +3,7 @@ package org.dmfs.express.json.elementary;
 import org.dmfs.express.json.JsonValue;
 import org.dmfs.express.json.Jsonable;
 import org.dmfs.express.json.adapters.Json;
-import org.dmfs.jems.pair.Pair;
+import org.dmfs.jems2.Pair;
 
 import java.lang.Object;
 
