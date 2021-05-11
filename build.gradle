@@ -1,6 +1,5 @@
 apply plugin: 'java'
 
-sourceCompatibility = 1.8
 
 def gitVersion = { ->
     def stdout = new ByteArrayOutputStream()
@@ -16,6 +15,7 @@ allprojects {
     version gitVersion()
     repositories {
         mavenCentral()
+        mavenLocal()
     }
 }
 

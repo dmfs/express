@@ -1,3 +1,4 @@
 rootProject.name = 'express'
 include 'express-json'
-
+include 'express-xml'
+include 'express-xml-testing'

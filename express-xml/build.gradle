@@ -9,8 +9,10 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    implementation 'org.dmfs:jems2:2.2.0'
+    api 'org.dmfs:jems2:2.2.0'
 
     testImplementation 'org.dmfs:jems2-testing:2.2.0'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
     testImplementation 'junit:junit:4.12'
+    testImplementation project(':express-xml-testing')
 }
