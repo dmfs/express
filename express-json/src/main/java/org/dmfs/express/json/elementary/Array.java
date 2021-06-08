@@ -9,6 +9,8 @@ import org.dmfs.jems2.iterable.Seq;
 
 import java.io.IOException;
 
+import static org.dmfs.jems2.iterable.EmptyIterable.emptyIterable;
+
 
 /**
  * A {@link JsonValue} array. A JSON array can contain any JSON value.
@@ -18,6 +20,12 @@ import java.io.IOException;
 public final class Array implements JsonValue
 {
     private final Iterable<JsonValue> mElements;
+
+
+    public Array()
+    {
+        this(emptyIterable());
+    }
 
 
     /**
