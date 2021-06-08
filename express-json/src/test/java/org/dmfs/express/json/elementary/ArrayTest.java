@@ -20,6 +20,7 @@ public class ArrayTest
     @Test
     public void test() throws Exception
     {
+        assertThat(new Array(), serializesTo("[]"));
         assertThat(new Array(new Jsonable[0]), serializesTo("[]"));
         assertThat(new Array(new java.lang.Boolean[0]), serializesTo("[]"));
         assertThat(new Array(new java.lang.Number[0]), serializesTo("[]"));
