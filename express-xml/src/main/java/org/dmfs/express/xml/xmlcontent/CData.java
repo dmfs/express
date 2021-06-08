@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 /**
  * {@link Xml} CData.
  * <p>
- * If the CData contains a "]]>" Sequence, it's serialized as "]]]]><[CData[>" to ensure it's not interpreted as the end of the CData element.
+ * If the CData contains a "]]&gt;" Sequence, it's serialized as "]]]]&gt;&lt;[CData[&gt;" to ensure it's not interpreted as the end of the CData element.
  */
 public final class CData extends CompositeXml implements XmlContent
 {
