@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/dmfs/express.svg?branch=master)](https://travis-ci.org/dmfs/express)
-[![codecov](https://codecov.io/gh/dmfs/express/branch/master/graph/badge.svg)](https://codecov.io/gh/dmfs/express)
+[![Build](https://github.com/dmfs/express/actions/workflows/main.yml/badge.svg?label=main)](https://github.com/dmfs/express/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/dmfs/express/branch/main/graph/badge.svg)](https://codecov.io/gh/dmfs/express)
 
 # express
 
@@ -141,7 +141,7 @@ At present this library has the following limitations
 
 ## License
 
-Copyright 2018 dmfs GmbH
+Copyright 2023 dmfs GmbH
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

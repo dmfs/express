@@ -36,7 +36,7 @@ public final class String implements JsonValue
         {
             char c = mString.charAt(end);
             // check for any characters which need special treatment
-            if (c < 0x20 || c == 0x2F || c == 0x22 || c == 0x5c)
+            if (c < 0x20 || c == 0x22 || c == 0x5c)
             {
                 if (start != end)
                 {
