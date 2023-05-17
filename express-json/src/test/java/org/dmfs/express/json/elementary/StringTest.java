@@ -23,7 +23,7 @@ public class StringTest
         assertThat(new String("ab\ncd"), serializesTo("\"ab\\ncd\""));
         assertThat(new String("\nabcd"), serializesTo("\"\\nabcd\""));
         assertThat(new String("abcd\n"), serializesTo("\"abcd\\n\""));
-        assertThat(new String("abcd\n/"), serializesTo("\"abcd\\n\\/\""));
+        assertThat(new String("abcd\n/"), serializesTo("\"abcd\\n/\""));
         assertThat(new String("abcd\n\r\n\r"), serializesTo("\"abcd\\n\\r\\n\\r\""));
         assertThat(new String("abcd\n\r1234\n\rxyz"), serializesTo("\"abcd\\n\\r1234\\n\\rxyz\""));
         assertThat(new String("ab\tcd\n\r1234\n\rxyz"), serializesTo("\"ab\\tcd\\n\\r1234\\n\\rxyz\""));

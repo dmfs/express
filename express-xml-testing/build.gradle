@@ -12,6 +12,6 @@ dependencies {
     api "org.hamcrest:hamcrest:2.2"
     api project(":express-xml")
 
-    implementation "org.dmfs:jems2-testing:2.2.0"
+    implementation "org.dmfs:jems2-testing:2.18.0"
     testImplementation 'junit:junit:4.12'
 }
