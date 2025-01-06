@@ -4,16 +4,14 @@ import org.dmfs.express.json.JsonValue;
 import org.dmfs.express.json.Jsonable;
 import org.dmfs.jems2.iterable.EmptyIterable;
 import org.dmfs.jems2.iterable.Seq;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.dmfs.express.json.hamcrest.JsonSerializationMatcher.serializesTo;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.express.json.confidence.Qualities.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 
 /**
  * Unit test for {@link Array}.
- *
- * @author Marten Gajda
  */
 public class ArrayTest
 {

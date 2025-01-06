@@ -4,12 +4,12 @@ import org.dmfs.jems2.iterable.EmptyIterable;
 import org.dmfs.jems2.iterable.Seq;
 import org.dmfs.jems2.optional.Absent;
 import org.dmfs.jems2.optional.Present;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 
-import static org.dmfs.express.json.hamcrest.JsonSerializationMatcher.serializesTo;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.express.json.confidence.Qualities.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 
 public class ObjectTest

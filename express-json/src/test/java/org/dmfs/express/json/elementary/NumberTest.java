@@ -1,15 +1,13 @@
 package org.dmfs.express.json.elementary;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.dmfs.express.json.hamcrest.JsonSerializationMatcher.serializesTo;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.express.json.confidence.Qualities.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 
 /**
  * Unit test for @{@link Number}.
- *
- * @author Marten Gajda
  */
 public class NumberTest
 {

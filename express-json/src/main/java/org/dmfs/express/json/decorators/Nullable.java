@@ -17,15 +17,13 @@ import java.io.IOException;
 
 /**
  * A {@link JsonValue} value which can be {@code null}.
- *
- * @author Marten Gajda
  */
 public final class Nullable implements JsonValue
 {
     private final Single<JsonValue> mDelegate;
 
 
-    public Nullable(CharSequence string)
+    public Nullable(@org.eclipse.jdt.annotation.Nullable CharSequence string)
     {
         this(new Mapped<>(String::new, new NullSafe<>(string)));
     }
