@@ -3,8 +3,9 @@ package org.dmfs.express.json.elementary;
 import org.dmfs.express.json.JsonSink;
 import org.dmfs.express.json.JsonValue;
 import org.dmfs.express.json.decorators.Nullable;
+import org.dmfs.jems2.Optional;
 import org.dmfs.jems2.Pair;
-import org.dmfs.jems2.iterable.Seq;
+import org.dmfs.jems2.iterable.*;
 
 import java.io.IOException;
 
@@ -26,6 +27,27 @@ public final class Object implements JsonValue
     public Object(Pair<String, JsonValue>... elements)
     {
         this(new Seq<>(elements));
+    }
+
+
+    @SafeVarargs
+    public Object(Iterable<Pair<String, JsonValue>> elements, Optional<Pair<String, JsonValue>>... optionalMembers)
+    {
+        this(elements, new Seq<>(optionalMembers));
+    }
+
+    @SafeVarargs
+    public Object(Iterable<Pair<String, JsonValue>> elements, java.util.Optional<Pair<String, JsonValue>>... optionalMembers)
+    {
+        this(new Joined<>(elements,
+            new Mapped<>(
+                java.util.Optional::get,
+                new Sieved<>(java.util.Optional::isPresent, new Seq<>(optionalMembers)))));
+    }
+
+    public Object(Iterable<Pair<String, JsonValue>> elements, Iterable<Optional<Pair<String, JsonValue>>> optionalMembers)
+    {
+        this(new Joined<>(elements, new PresentValues<>(optionalMembers)));
     }
 
 
