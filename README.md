@@ -78,6 +78,11 @@ which corresponds to the following JSON text (pretty printed version)
 
 The Java code has (almost) the same structure as the JSON result.
 
+In fact, the [Unclutter Java](https://github.com/dmfs/unclutter-java) Intellij Plugin can fold this to
+
+![unclutter-java Screenshot](images/screenshot.png)
+
+
 Turning the `JsonValue` into a JSON Text is done with
 
 ```java
