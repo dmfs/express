@@ -24,7 +24,7 @@ public final class SerializesTo extends QualityComposition<Xml>
 {
     public SerializesTo(CharSequence xmlText)
     {
-        this(new DefaultNamespaceRegistry(), emptyIterable(), hasToString(xmlText.toString()));
+        this(new DefaultNamespaceRegistry(), emptyIterable(), xmlText);
     }
 
     public SerializesTo(NamespaceRegistry namespaceRegistry, Iterable<? extends NamespaceBinding> unregisteredNamespaces, CharSequence xmlText)
