@@ -2,15 +2,17 @@ package org.dmfs.express.xml.namespaceregistry;
 
 import org.dmfs.express.xml.NamespaceBinding;
 import org.dmfs.express.xml.NamespaceRegistry;
+import org.dmfs.jems2.Pair;
 import org.dmfs.jems2.iterable.Seq;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.dmfs.jems2.hamcrest.matchers.LambdaMatcher.having;
-import static org.dmfs.jems2.hamcrest.matchers.iterable.IterableMatcher.iteratesTo;
-import static org.dmfs.jems2.hamcrest.matchers.optional.PresentMatcher.present;
-import static org.dmfs.jems2.hamcrest.matchers.pair.PairMatcher.pair;
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.jems2.confidence.Jems2.present;
+import static org.saynotobugs.confidence.Assertion.assertThat;
+import static org.saynotobugs.confidence.core.quality.Composite.allOf;
+import static org.saynotobugs.confidence.core.quality.Composite.has;
+import static org.saynotobugs.confidence.core.quality.Grammar.is;
+import static org.saynotobugs.confidence.core.quality.Iterable.iterates;
+import static org.saynotobugs.confidence.core.quality.Object.instanceOf;
 
 
 /**
@@ -30,9 +32,12 @@ public class DefaultNamespaceRegistryTest
 
         assertThat(
             new DefaultNamespaceRegistry().withNamespaces(new Seq<>("a")),
-            is(pair(instanceOf(NamespaceRegistry.class), iteratesTo(allOf(
-                having(NamespaceBinding::namespace, is("a")),
-                having(NamespaceBinding::prefix, is("ns0"))
-            )))));
+            is(allOf(
+                has(Pair::left,
+                    instanceOf(NamespaceRegistry.class)),
+                has(Pair::right,
+                    iterates(allOf(
+                        has(NamespaceBinding::namespace, is("a")),
+                        has(NamespaceBinding::prefix, is("ns0"))))))));
     }
 }

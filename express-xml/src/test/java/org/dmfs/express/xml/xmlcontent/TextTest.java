@@ -1,10 +1,10 @@
 package org.dmfs.express.xml.xmlcontent;
 
-import org.junit.Test;
 
-import static org.dmfs.express.xml.hamcrest.XmlSerializationMatcher.serializesTo;
-import static org.junit.Assert.assertThat;
+import org.junit.jupiter.api.Test;
 
+import static org.dmfs.express.xml.confidence.Xml.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 /**
  * Unit test for {@link Text}.

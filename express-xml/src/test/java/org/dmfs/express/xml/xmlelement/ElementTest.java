@@ -2,20 +2,18 @@ package org.dmfs.express.xml.xmlelement;
 
 import org.dmfs.express.xml.attribute.Attr;
 import org.dmfs.express.xml.attribute.XmlAttr;
-import org.dmfs.express.xml.xmlcontent.Text;
 import org.dmfs.express.xml.qualifiedname.Qn;
+import org.dmfs.express.xml.xmlcontent.Text;
 import org.dmfs.jems2.iterable.EmptyIterable;
 import org.dmfs.jems2.iterable.Seq;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.dmfs.express.xml.hamcrest.XmlSerializationMatcher.serializesTo;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.express.xml.confidence.Xml.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 
 /**
  * Unit test for {@link Element}.
- *
- * @author Marten Gajda
  */
 public class ElementTest
 {

@@ -21,9 +21,8 @@ public final class WriterSink implements XmlSink
 
 
     @Override
-    public XmlSink writeText(String text) throws IOException
+    public void writeText(String text) throws IOException
     {
         mWriter.write(text);
-        return this;
     }
 }

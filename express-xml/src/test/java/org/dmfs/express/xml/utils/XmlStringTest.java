@@ -1,19 +1,18 @@
 package org.dmfs.express.xml.utils;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-import static org.dmfs.jems2.hamcrest.matchers.fragile.BrokenFragileMatcher.throwing;
-import static org.dmfs.jems2.hamcrest.matchers.single.SingleMatcher.hasValue;
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.jems2.confidence.Jems2.hasValue;
+import static org.dmfs.jems2.confidence.Jems2.throwing;
+import static org.saynotobugs.confidence.Assertion.assertThat;
+import static org.saynotobugs.confidence.core.quality.Grammar.is;
 
 
 /**
  * Unit test for {@link XmlString}.
- *
- * @author Marten Gajda
  */
 public class XmlStringTest
 {

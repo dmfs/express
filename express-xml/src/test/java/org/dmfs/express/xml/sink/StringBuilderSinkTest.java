@@ -1,15 +1,13 @@
 package org.dmfs.express.xml.sink;
 
-import org.junit.Test;
 
-import static org.hamcrest.Matchers.hasToString;
-import static org.junit.Assert.assertThat;
+import org.junit.jupiter.api.Test;
 
+import static org.saynotobugs.confidence.Assertion.assertThat;
+import static org.saynotobugs.confidence.core.quality.Object.hasToString;
 
 /**
  * Unit test for {@link StringBuilderSink}.
- *
- * @author Marten Gajda
  */
 public class StringBuilderSinkTest
 {

@@ -8,20 +8,23 @@ apply from: '../publish.gradle'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-
 dependencies {
     compileOnly libs.eclipse.jdt.anntation
     compileOnly libs.srcless.annotations
     annotationProcessor libs.bundles.srcless.processors
     implementation libs.jems2
+    implementation libs.jems2.confidence
+    implementation libs.confidence.core
+    api project(":express-xml")
 
-    testImplementation project(":express-xml-confidence")
+
     testCompileOnly libs.eclipse.jdt.anntation
     testCompileOnly libs.srcless.annotations
     testAnnotationProcessor libs.bundles.srcless.processors
     testImplementation libs.confidence.core
     testImplementation libs.confidence.test
     testImplementation libs.jems2.confidence
+    testImplementation libs.jems2.testing
     testImplementation libs.junit.jupiter.api
     testRuntimeOnly libs.junit.jupiter.engine
 }

@@ -2,16 +2,14 @@ package org.dmfs.express.xml.xmlelement;
 
 import org.dmfs.express.xml.qualifiedname.Qn;
 import org.dmfs.jems2.iterable.Seq;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.dmfs.express.xml.hamcrest.XmlSerializationMatcher.serializesTo;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.express.xml.confidence.Xml.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 
 /**
  * Unit test for {@link NsRegistered}.
- *
- * @author Marten Gajda
  */
 public class NsRegisteredTest
 {

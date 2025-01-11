@@ -18,9 +18,8 @@ public final class StringBuilderSink implements XmlSink
 
 
     @Override
-    public XmlSink writeText(String text)
+    public void writeText(String text)
     {
         mStringBuilder.append(text);
-        return this;
     }
 }
