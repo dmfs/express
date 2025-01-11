@@ -15,8 +15,6 @@ import java.io.IOException;
  * Nullable}, but not {@code null}).
  * <p>
  * Members are passed as {@link Pair}s of keys and values with keys being {@link String}s and values being {@link JsonValue}.
- *
- * @author Marten Gajda
  */
 public final class Object implements JsonValue
 {

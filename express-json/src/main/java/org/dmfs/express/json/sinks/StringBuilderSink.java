@@ -5,8 +5,6 @@ import org.dmfs.express.json.JsonSink;
 
 /**
  * A {@link JsonSink} writing to a {@link StringBuilder}.
- *
- * @author Marten Gajda
  */
 public final class StringBuilderSink implements JsonSink
 {

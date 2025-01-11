@@ -9,8 +9,21 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    implementation 'org.dmfs:jems2:2.18.0'
+    compileOnly libs.eclipse.jdt.anntation
+    compileOnly libs.srcless.annotations
+    annotationProcessor libs.bundles.srcless.processors
+    implementation libs.jems2
 
-    testImplementation 'org.dmfs:jems2-testing:2.18.0'
-    testImplementation 'junit:junit:4.12'
+    testCompileOnly libs.eclipse.jdt.anntation
+    testCompileOnly libs.srcless.annotations
+    testAnnotationProcessor libs.bundles.srcless.processors
+    testImplementation libs.confidence.core
+    testImplementation libs.confidence.test
+    testImplementation libs.jems2.confidence
+    testImplementation libs.junit.jupiter.api
+    testRuntimeOnly libs.junit.jupiter.engine
+}
+
+test {
+    useJUnitPlatform()
 }

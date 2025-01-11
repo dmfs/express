@@ -1,17 +1,12 @@
 package org.dmfs.express.json.adapters;
 
 import org.dmfs.express.json.elementary.String;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.dmfs.express.json.hamcrest.JsonSerializationMatcher.serializesTo;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.express.json.confidence.Qualities.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 
-/**
- * Unit test for {@link Json}.
- *
- * @author marten
- */
 public class JsonTest
 {
     @Test

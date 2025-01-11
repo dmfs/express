@@ -8,7 +8,7 @@ import java.lang.Object;
 
 
 /**
- * An abstract {@link JsonValue} object which just delegates to another JsonValue object. It's meant to fix the lack of native support for the delagate pattern
+ * An abstract {@link JsonValue} object which just delegates to another JsonValue object. It's meant to fix the lack of native support for the delegate pattern
  * in Java.
  * <p>
  * You can use it to compose complex {@link JsonValue} {@link Object}s or {@link Array}s and give the result a proper name.
@@ -28,11 +28,12 @@ import java.lang.Object;
  * }
  * }</pre>
  * <p>
- * The following code results in a valid a valid {@link JsonValue} object:
+ * The following code results in a valid {@link JsonValue} object:
  * <pre>{@code new Person("John", "Doe", 23)}</pre>
  *
- * @author Marten Gajda
+ * @deprecated in favour of {@link org.dmfs.express.json.JsonValueComposition}.
  */
+@Deprecated
 public abstract class DelegatingJsonValue implements JsonValue
 {
     private final JsonValue mDelegate;

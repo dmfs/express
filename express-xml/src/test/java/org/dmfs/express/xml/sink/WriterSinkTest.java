@@ -1,20 +1,19 @@
 package org.dmfs.express.xml.sink;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
+import static org.saynotobugs.confidence.Assertion.assertThat;
+import static org.saynotobugs.confidence.core.quality.Grammar.is;
 
 
 /**
  * Unit test for {@link WriterSink}.
- *
- * @author Marten Gajda
  */
 public class WriterSinkTest
 {

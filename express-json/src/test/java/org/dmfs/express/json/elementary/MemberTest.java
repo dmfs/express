@@ -1,17 +1,15 @@
 package org.dmfs.express.json.elementary;
 
 import org.dmfs.express.json.Jsonable;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.dmfs.express.json.hamcrest.JsonSerializationMatcher.serializesTo;
-import static org.dmfs.jems2.hamcrest.matchers.pair.PairMatcher.pair;
-import static org.junit.Assert.assertThat;
+import static org.dmfs.express.json.confidence.Qualities.pair;
+import static org.dmfs.express.json.confidence.Qualities.serializesTo;
+import static org.saynotobugs.confidence.Assertion.assertThat;
 
 
 /**
  * Unit test for {@link Member}.
- *
- * @author Marten Gajda
  */
 public class MemberTest
 {

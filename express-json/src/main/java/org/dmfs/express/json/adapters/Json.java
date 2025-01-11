@@ -9,8 +9,6 @@ import java.io.IOException;
 
 /**
  * The {@link JsonValue} of a {@link Jsonable} object.
- *
- * @author Marten Gajda
  */
 public final class Json implements JsonValue
 {

@@ -1,11 +1,11 @@
 package org.dmfs.express.xml.qualifiedname;
 
-import org.junit.Test;
 
-import static org.dmfs.express.xml.hamcrest.QualifiedNameMatcher.qualifiedName;
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+import org.junit.jupiter.api.Test;
 
+import static org.dmfs.express.xml.confidence.Xml.qualifiedName;
+import static org.saynotobugs.confidence.Assertion.assertThat;
+import static org.saynotobugs.confidence.core.quality.Grammar.is;
 
 /**
  * Unit test for {@link XmlNsName}.

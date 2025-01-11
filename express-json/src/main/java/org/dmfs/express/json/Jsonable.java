@@ -1,10 +1,11 @@
 package org.dmfs.express.json;
 
+import org.dmfs.srcless.annotations.composable.Composable;
+
 /**
  * Interface of an object which can render itself to {@link JsonValue}.
- *
- * @author Marten Gajda
  */
+@Composable
 public interface Jsonable
 {
     /**
