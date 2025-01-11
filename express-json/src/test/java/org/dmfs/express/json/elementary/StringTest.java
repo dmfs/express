@@ -8,8 +8,6 @@ import static org.saynotobugs.confidence.Assertion.assertThat;
 
 /**
  * Unit test for {@link String}.
- *
- * @author Marten Gajda
  */
 public class StringTest
 {

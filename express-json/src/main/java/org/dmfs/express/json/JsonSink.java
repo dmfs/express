@@ -1,11 +1,14 @@
 package org.dmfs.express.json;
 
+import org.dmfs.srcless.annotations.composable.Composable;
+
 import java.io.IOException;
 
 
 /**
- * @author Marten Gajda
+ *
  */
+@Composable
 public interface JsonSink
 {
     void writeJson(CharSequence text) throws IOException;

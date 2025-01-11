@@ -17,7 +17,7 @@ are based on mutable POJOs and require the entire JSON structure to be construct
 This library aims to provide a simple declarative way of generating JSON text. It allows you to express yourself directly in JSON, using Java notation.
 It's meant for use cases when you need to create JSON texts without having to parse the same document type. A common use case is sending data to a JSON based API.
 
-Parsing JSON text is currently not supported although it might be added later on.
+Parsing JSON text is currently not supported, although it might be added later on.
 
 Note, the interfaces defined in this library may be subject to change. However, this is not considered an issue when using this in production, because
 it's unlikely that you need to implement any of the interfaces of this library yourself. 
@@ -91,12 +91,12 @@ String jsonText = new JsonText(json).value();
 
 ### Composition of complex objects
 
-`DelegatingJsonValue` is an abstract class allowing for easy composition of complex JSON values.
+`JsonValueComposition` is an abstract class allowing for easy composition of complex JSON values.
 
 The following two classes represent valid composite JSON values
 
 ```java
-public final class Album extends DelegatingJsonValue
+public final class Album extends JsonValueComposition
 {
     public Album(String title, String artist, Iterable<Track> tracks)
     {
@@ -108,7 +108,7 @@ public final class Album extends DelegatingJsonValue
     }
 }
 
-public final class Track extends DelegatingJsonValue
+public final class Track extends JsonValueComposition
 {
     public Track(String title, int durationSeconds)
     {

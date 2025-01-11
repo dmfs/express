@@ -20,8 +20,6 @@ import java.lang.Object;
  *     new Member("age", 42),
  *     new Member("hobbies", new Array("Golf", "Games"));
  * }</pre>
- *
- * @author Marten Gajda
  */
 public final class Member implements Pair<String, JsonValue>
 {

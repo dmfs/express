@@ -9,8 +9,6 @@ import java.io.IOException;
 
 /**
  * A String {@link JsonValue}.
- *
- * @author Marten Gajda
  */
 public final class String implements JsonValue
 {

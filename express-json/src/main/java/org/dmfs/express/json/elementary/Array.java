@@ -14,8 +14,6 @@ import static org.dmfs.jems2.iterable.EmptyIterable.emptyIterable;
 
 /**
  * A {@link JsonValue} array. A JSON array can contain any JSON value.
- *
- * @author Marten Gajda
  */
 public final class Array implements JsonValue
 {
@@ -31,8 +29,7 @@ public final class Array implements JsonValue
     /**
      * Creates a {@link JsonValue} array of {@link Jsonable}s.
      *
-     * @param elements
-     *     the elements of the Array
+     * @param elements the elements of the Array
      */
     public Array(Jsonable... elements)
     {
@@ -43,8 +40,7 @@ public final class Array implements JsonValue
     /**
      * Creates a {@link JsonValue} array of {@link Boolean}s.
      *
-     * @param elements
-     *     the elements of the Array
+     * @param elements the elements of the Array
      */
     public Array(java.lang.Boolean... elements)
     {
@@ -55,8 +51,7 @@ public final class Array implements JsonValue
     /**
      * Creates a {@link JsonValue} array of {@link Number}s.
      *
-     * @param elements
-     *     the elements of the Array
+     * @param elements the elements of the Array
      */
     public Array(java.lang.Number... elements)
     {
@@ -67,8 +62,7 @@ public final class Array implements JsonValue
     /**
      * Creates a {@link JsonValue} array of {@link CharSequence}s.
      *
-     * @param elements
-     *     the elements of the Array
+     * @param elements the elements of the Array
      */
     public Array(CharSequence... elements)
     {
@@ -79,8 +73,7 @@ public final class Array implements JsonValue
     /**
      * Creates a {@link JsonValue} array of arbitrary {@link JsonValue} values.
      *
-     * @param elements
-     *     the elements of the Array
+     * @param elements the elements of the Array
      */
     public Array(JsonValue... elements)
     {
@@ -91,8 +84,7 @@ public final class Array implements JsonValue
     /**
      * Creates a {@link JsonValue} array of arbitrary {@link JsonValue} values.
      *
-     * @param elements
-     *     An {@link Iterable} of {@link JsonValue} values.
+     * @param elements An {@link Iterable} of {@link JsonValue} values.
      */
     public Array(Iterable<JsonValue> elements)
     {

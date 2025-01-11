@@ -9,8 +9,6 @@ import static org.saynotobugs.confidence.Assertion.assertThat;
 
 /**
  * Unit test for {@link DelegatingJsonValue}.
- *
- * @author Marten Gajda
  */
 public class DelegatingJsonValueTest
 {

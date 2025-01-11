@@ -8,8 +8,6 @@ import java.io.IOException;
 
 /**
  * The trivial {@link JsonValue} {@code null} value.
- *
- * @author Marten Gajda
  */
 public final class Null implements JsonValue
 {

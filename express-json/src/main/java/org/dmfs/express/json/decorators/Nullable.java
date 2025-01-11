@@ -16,7 +16,7 @@ import java.io.IOException;
 
 
 /**
- * A {@link JsonValue} value which can be {@code null}.
+ * A {@link JsonValue} value which may be {@code null}.
  */
 public final class Nullable implements JsonValue
 {

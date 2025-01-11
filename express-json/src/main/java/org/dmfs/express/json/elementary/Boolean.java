@@ -8,8 +8,6 @@ import java.io.IOException;
 
 /**
  * A trivial {@link JsonValue} value which can be either {@code true} or {@code false}.
- *
- * @author Marten Gajda
  */
 public final class Boolean implements JsonValue
 {

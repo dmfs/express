@@ -1,6 +1,8 @@
 package org.dmfs.express.json.elementary;
 
 import org.dmfs.express.json.JsonValue;
+import org.dmfs.express.json.Jsonable;
+import org.dmfs.express.json.adapters.Json;
 import org.dmfs.express.json.sinks.StringBuilderSink;
 import org.dmfs.jems2.Single;
 
@@ -10,12 +12,16 @@ import java.lang.String;
 
 /**
  * JSON text representation of a {@link JsonValue}.
- *
- * @author Marten Gajda
  */
 public final class JsonText implements Single<String>
 {
     private final JsonValue mJsonValue;
+
+
+    public JsonText(Jsonable jsonable)
+    {
+        this(new Json(jsonable));
+    }
 
 
     public JsonText(JsonValue jsonValue)

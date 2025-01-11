@@ -8,8 +8,6 @@ import java.io.IOException;
 
 /**
  * A number {@link JsonValue}.
- *
- * @author Marten Gajda
  */
 public final class Number implements JsonValue
 {

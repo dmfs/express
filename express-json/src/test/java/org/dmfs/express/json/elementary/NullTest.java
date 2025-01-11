@@ -8,8 +8,6 @@ import static org.saynotobugs.confidence.Assertion.assertThat;
 
 /**
  * Test for {@link Null}.
- *
- * @author Marten Gajda
  */
 public class NullTest
 {
